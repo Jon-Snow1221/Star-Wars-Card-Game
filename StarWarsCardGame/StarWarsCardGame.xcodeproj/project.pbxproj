@@ -13,6 +13,10 @@
 		7EDB74E925AF34B500B80B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB74E825AF34B500B80B7D /* Assets.xcassets */; };
 		7EDB74EC25AF34B500B80B7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB74EA25AF34B500B80B7D /* LaunchScreen.storyboard */; };
 		7EDB74FD25AF359500B80B7D /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB74FC25AF359500B80B7D /* CharacterController.swift */; };
+		83021A2A2739EBD200074406 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83021A292739EBD200074406 /* Character.swift */; };
+		83021A2C273AC18200074406 /* CharacterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83021A2B273AC18200074406 /* CharacterCollectionViewController.swift */; };
+		83021A2E273ACA1100074406 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83021A2D273ACA1100074406 /* CharacterCollectionViewCell.swift */; };
+		83021A30273AE3BA00074406 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83021A2F273AE3BA00074406 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7EDB74EB25AF34B500B80B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EDB74ED25AF34B500B80B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDB74FC25AF359500B80B7D /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
+		83021A292739EBD200074406 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		83021A2B273AC18200074406 /* CharacterCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterCollectionViewController.swift; path = StarWarsCardGame/Views/CharacterCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		83021A2D273ACA1100074406 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterCollectionViewCell.swift; path = StarWarsCardGame/Views/CharacterCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		83021A2F273AE3BA00074406 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		7EDB74DE25AF34B500B80B7D /* StarWarsCardGame */ = {
 			isa = PBXGroup;
 			children = (
+				83021A282739EBBF00074406 /* Model */,
 				7EDB74FB25AF356600B80B7D /* Controllers */,
 				7EDB74FA25AF355B00B80B7D /* Views */,
 				7EDB74F425AF34C400B80B7D /* Resources */,
@@ -94,6 +103,9 @@
 		7EDB74FA25AF355B00B80B7D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				83021A2D273ACA1100074406 /* CharacterCollectionViewCell.swift */,
+				83021A2B273AC18200074406 /* CharacterCollectionViewController.swift */,
+				83021A2F273AE3BA00074406 /* FilterViewController.swift */,
 				7EDB74F925AF355300B80B7D /* Storyboards */,
 			);
 			path = Views;
@@ -105,6 +117,14 @@
 				7EDB74F625AF34D100B80B7D /* Model Controller */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		83021A282739EBBF00074406 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83021A292739EBD200074406 /* Character.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83021A30273AE3BA00074406 /* FilterViewController.swift in Sources */,
+				83021A2E273ACA1100074406 /* CharacterCollectionViewCell.swift in Sources */,
 				7EDB74E025AF34B500B80B7D /* AppDelegate.swift in Sources */,
 				7EDB74FD25AF359500B80B7D /* CharacterController.swift in Sources */,
+				83021A2C273AC18200074406 /* CharacterCollectionViewController.swift in Sources */,
 				7EDB74E225AF34B500B80B7D /* SceneDelegate.swift in Sources */,
+				83021A2A2739EBD200074406 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
